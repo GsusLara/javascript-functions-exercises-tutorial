@@ -1,11 +1,16 @@
 
 const rapid = (myString) => {
     let consonants = [];
+    let vocales=[];
     for(let position in myString){
         if(['a','e','i','o','u'].includes(myString[position]) == false)
-            consonants.push(myString[position])
+            consonants.push(myString[position])     
     }
-    return consonants.join('');
+    let Mayuzculas=consonants.join('');
+    return Mayuzculas.toLocaleUpperCase();
+    // return consonants.join('');
+   
+    
 }
 
 // From this line up Do not change code below
